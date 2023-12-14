@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>test</title>
+    <style type="text/css">
+        @font-face {
+            font-family: 'Title';
+            src: url('Assets/Starborn.otf');
+        }
+        @font-face {
+            font-family: 'Desc';
+            src: url('Assets/Harvest\ Season.otf');
+        }
+
+        body {
+            margin: 0; /* Remove default margin to ensure the slideshow takes full width */
+        }
+
+        #slider {
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+            margin: auto; /* Center the slider */
+        }
+
+        #slider figure {
+            display: flex;
+            width: 500%;
+            margin: 0;
+            left: 0;
+            animation: 30s slider infinite;
+            position: relative;
+        }
+
+        #slider figure img {
+            width: 10%;
+            object-fit: cover;
+        }
+
+        #slider .title {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+            font-family: 'Title', sans-serif;
+            font-size: 48px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            width: 100%;
+            z-index: 1;
+        }
+
+        @keyframes slider {
+            0%, 100% {
+                transform: translateX(0);
+            }
+            20%, 25% {
+                transform: translateX(-20%);
+            }
+            45%, 50% {
+                transform: translateX(-40%);
+            }
+            70%, 75% {
+                transform: translateX(-60%);
+            }
+            95%, 100% {
+                transform: translateX(-80%);
+            }
+        }
+
+        /* New styles for the div below the slideshow */
+        #content {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+        }
+
+        #content img {
+            width: 50%;
+            margin-right: 20px;
+            border-radius: 32px;
+        }
+
+        #content h2 {
+            font-family: 'Title', sans-serif;
+            font-size: 36px;
+            color: #333;
+        }
+
+        #content p {
+            font-family: 'Desc', sans-serif;
+            font-size: 24px;
+            color: #333;
+            width: 100%;
+            text-align: justify;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="slider">
+        <div class="title">AlyxAndyer's portfolio</div>
+        <figure>
+            <img src="Images/Slideshow/1.png">
+            <img src="Images/Slideshow/2.png">
+            <img src="Images/Slideshow/3.png">
+            <img src="Images/Slideshow/4.png">
+            <img src="Images/Slideshow/5.png">
+            <img src="Images/Slideshow/6.png">
+            <img src="Images/Slideshow/7.png">
+            <img src="Images/Slideshow/8.png">
+            <img src="Images/Slideshow/9.png">
+            <img src="Images/Slideshow/10.png">
+        </figure>
+    </div>
+
+    <!-- New div below the slideshow -->
+    <div id="content">
+        <img src="Images/aboutme.png">
+        <div>
+            <h2>About Me</h2>
+            <p>Hi, I'm AlyxAndyer or Alex, I have been building and modelling on Roblox for 3 years and have worked with groups such as "ROLEPLAY Hospital" and "Delivery Inc". I have worked with plenty of reputable developers during my time on Roblox. I Have contributed to over 380 million visits. I specialize in low-mid poly but I'm capable of many other styles and have done loads of other styles.
+                I always work to the best of my ability and will deliver on time while still keeping a great quality level commission.</p>
+        </div>
+    </div>
+    <div id="content">
+        <img src="Images/pastwork1.png">
+        <img src="Images/pastwork2.png">
+    </div>
+    <div id="content">
+        <h2>Past Developers I've worked with </h2>
+        <p>I have worked with some known devs during my time on Roblox a few being @MooseWasThere,@VikingLaw and @Mischiefing.</p>
+    </div>
+    <div id="content">
+        <img src="Images/features.png">
+        <div>
+            <h2>Features</h2>
+            <p>I have been featured in two of RoBuilders videos you probably know him previously as IntelPlayz.</p>
+        </div>
+    </div>
+    <div id="content">
+        <img src="Images/pastgames.png">
+        <div>
+            <h2>Past games</h2>
+            <p>Ive worked with the group "Delivery Inc" on their hit game "Delivery Man Simulator"</p>
+        </div>
+    </div>
+    <div id="content">
+        <img src="Images/pastwork.png">
+        <div>
+            <h2>Past work</h2>
+            <p>I built some of the maps youd find in "Lava simulator" by "playScape.</p>
+        </div>
+    </div>
+</body>
+
+</html>
